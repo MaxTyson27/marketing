@@ -1,13 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Ришелье</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  
+
+
+
+
+
+
+
+  <section class="home">
+
+
+    <div class="home-slider swiper-container">
+      <div class="home-slider__wrapper swiper-wrapper">
+
+        <div class="home__swiper-item swiper-slide" style="background-image: url(images/header-bg.jpg)">
+          <div class="container">
+            <div class="home-content">
+              <div class="home__title">Махровый халат
+                премиум-класса
+              </div>
+              <div class="home__des">С индивидуальной вышивкой</div>
+              <div class="bnt__money-box">
+                <a class="home__btn" href="#">Заказать</a> <span class="home__btn--money">3499 ₽</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="home__swiper-item swiper-slide" style="background-image: url(images/header-bg.jpg)">
+          <div class="container">
+            <div class="home-content">
+              <div class="home__title">Махровый халат
+                премиум-класса
+              </div>
+              <div class="home__des">С индивидуальной вышивкой</div>
+              <div class="bnt__money-box">
+                <a class="home__btn" href="#">Заказать</a> <span class="home__btn--money">3599 ₽</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="home__swiper-item swiper-slide" style="background-image: url(images/header-bg.jpg)">
+          <div class="container">
+            <div class="home-content">
+              <div class="home__title">Махровый халат
+                премиум-класса
+              </div>
+              <div class="home__des">С индивидуальной вышивкой</div>
+              <div class="bnt__money-box">
+                <a class="home__btn" href="#">Заказать</a> <span class="home__btn--money">3699 ₽</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="home__swiper-item swiper-slide" style="background-image: url(images/header-bg.jpg)">
+          <div class="container">
+            <div class="home-content">
+              <div class="home__title">Махровый халат
+                премиум-класса
+              </div>
+              <div class="home__des">С индивидуальной вышивкой</div>
+              <div class="bnt__money-box">
+                <a class="home__btn" href="#">Заказать</a> <span class="home__btn--money">3799 ₽</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="swiper-pagination"></div>
+
+
+      <div class="container">
+
+
+
+
+
+
+        <div class=" home__container--btn">
+
+          <div class="home__prev-prev">
+            <img src="images/arrow-left.svg" alt="">
+          </div>
+          <div class="home__next-next">
+            <img src="images/arrow-left.svg" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+  <!-- Home Slider end-->
+
+  <section class="sub-header">
+    <div class="container">
+      <div class="sub-header__item">
+        <div class="sub-header__items">
+          <img src="images/money.svg" alt="">
+          <div class="sub-header__items__text">
+            Оплата при
+            получении
+          </div>
+        </div>
+        <div class="sub-header__items">
+          <img src="images/truck.svg" alt="">
+          <div class="sub-header__items__text">
+            Бесплатная
+            вышивĸа
+          </div>
+        </div>
+        <div class="sub-header__items">
+          <img src="images/send.svg" alt="">
+          <div class="sub-header__items__text">
+            Бесплатная
+            доставка по России
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="cloth">
+    <div class="cloth__container">
+      <div class="cloth__bg"></div>
+      <div class="sticky-box">
+        <div class="sticky">
+          <div class="cloth__content-box">
+            <div class="cloth__title">Продуманный материал</div>
+            <div class="cloth__text">Халат из мягкой и плотной махровой ткани — петельчатая махра с легким массажирующим
+              эффектом. Для любителей комфорта.</div>
+          </div>
+        </div>
+      </div>
+      <div class="sticky-box-2">
+        <div class="sticky">
+          <div class="cloth__content-box">
+            <div class="cloth__title">Выигрывает всухую</div>
+            <div class="cloth__text">Микроструктура махрового волокна прекрасно впитывает воду и быстро сохнет. Материал
+              обладает стойкостью к условиям машинной стирки и сушки.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cloth__sticky">
+      <canvas class="cloth__video" id="hero-lightpass" style="z-index:10; position: absolute;" />
+    </div>
+  </section>
+
+  <section class="cloth clothTwo">
+
+    <div class="cloth__container">
+      <div class="cloth__bg"></div>
+      <div class="sticky-box">
+        <div class="sticky">
+          <div class="cloth__content-box">
+            <div class="cloth__title">Превосходное ĸачество</div>
+            <div class="cloth__text">Яркая, прочная нить с идеально гладкой поверхностью отлично держит форму вышивки
+              и долго сохраняют насыщенный цвет.</div>
+          </div>
+        </div>
+      </div>
+      <div class="sticky-box-2 clothTwo-box-2">
+        <div class="sticky">
+          <div class="cloth__content-box">
+            <div class="cloth__title">Плотность халата</div>
+            <div class="cloth__text">Яркая, прочная нить с идеально гладкой
+              поверхностью отлично держит форму вышивки
+              и долго сохраняют насыщенный цвет.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="cloth__sticky">
+      <canvas class="cloth__videoTwo" id="hero-lightpassTwo" style="z-index:10; position: absolute;" />
+
+
+    </div>
+  </section>
+  <section class="cloth clothTwo clothThree">
+
+
+    <div class="cloth__container">
+      <div class="cloth__bg"></div>
+      <div class="sticky-box">
+        <div class="sticky">
+          <div class="cloth__content-box">
+            <div class="cloth__title">Шелĸовая
+              нить</div>
+            <div class="cloth__text">Яркая, прочная нить с идеально гладкой
+              поверхностью отлично держит форму вышивки
+              и долго сохраняют насыщенный цвет.</div>
+          </div>
+        </div>
+      </div>
+      <div class="sticky-box-2 clothTwo-box-2">
+        <div class="sticky">
+          <div class="cloth__content-box">
+            <div class="cloth__title">С помощью вышивки на спине и на груди</div>
+            <div class="cloth__text"> вы сможете выделить благородные качества человека и подчеркнуть его
+              индивидуальность.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="cloth__sticky">
+      <canvas class="cloth__videoTwo" id="hero-lightpassThree" style="z-index:10; position: absolute;" />
+
+
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__contaner">
+
+        <div class="footer__content-box">
+          <div class="footer__logo">
+            <a href="#">
+              <img class="footer__logo-img" src="./images/logo.svg" alt="logo">
+            </a>
+          </div>
+          <div class="footer__logo-text">
+            Принимаем ваши звонки <br>
+            круглосуточно!
+          </div>
+          <div class="footer__tel-box">
+            <a class="footer__tel-link" href="tel:+88005515145">8 800 551 51 45</a>
+            <div class="footer__tel-des">Бесплатно по России</div>
+          </div>
+        </div>
+
+
+        <div class="footer__menu-box">
+          <a class="footer__menu-link" href="#">Создать макет</a>
+          <a class="footer__menu-link" href="#">Кэшбек</a>
+          <a class="footer__menu-link" href="#">Возврат и обмен </a>
+          <a class="footer__menu-link" href="#">Отзывы и вопросы</a>
+          <a class="footer__menu-link" href="#">Таблица размеров</a>
+          <a class="footer__menu-link" href="#">Публичная оферта</a>
+          <a class="footer__menu-link" href="#">Оплата</a>
+          <a class="footer__menu-link" href="#">Блог</a>
+          <a class="footer__menu-link" href="#">Блог</a>
+          <a class="footer__menu-link" href="#">Доставка</a>
+          <a class="footer__menu-link" href="#">Контакты</a>
+          <a class="footer__menu-link" href="#">Контакты</a>
+          <a class="footer__menu-link" href="#">Акции</a>
+          <a class="footer__menu-link" href="#">Реквизиты</a>
+        </div>
+
+
+        <div class="footer__social">
+          <div class="footer__social-title">
+            Напишите
+            нам
+          </div>
+          <div class="footer__social-box">
+            <a class="footer__social-link" href="#">
+              <img class="footer__whatsap" src="./images/whatsap-logo.svg" alt="whatsap-logo">
+            </a>
+
+            <a class="footer__social-link" href="#">
+              <img class="footer__vk" src="./images/vk-logo.svg" alt="vk-logo">
+            </a>
+
+            <a class="footer__social-link" href="#">
+              <img class="footer__instagram" src="./images/instagram-logo.svg" alt="instagram-logo">
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="footer__money-box">
+
+          <div class="footer__money-title">
+            Мы принимаем
+            к оплате
+          </div>
+
+          <div class="footer__cart-box">
+            <div class="footer__cart-img--box">
+              <img class="footer__cart-img" src="./images/visa-logo.svg" alt="visa-logo">
+            </div>
+
+            <div class="footer__cart-img--box">
+              <img class="footer__cart-img" src="./images/mastercart-logo.svg" alt="mastercart-logo">
+            </div>
+
+            <div class="footer__cart-img--box">
+              <img class="footer__cart-img" src="./images/googlepay-logo.svg" alt="googlepay-logo">
+            </div>
+
+            <div class="footer__cart-img--box">
+              <img class="footer__cart-img" src="./images/applepay.svg" alt="applepay-logo">
+            </div>
+
+            <div class="footer__cart-img--box">
+              <img class="footer__cart-img" src="./images/mir-logo.svg" alt="mir-log">
+            </div>
+
+            <div class="footer__cart-img--box">
+              <img class="footer__cart-img" src="./images/pay-logo.png" alt="pay-logo">
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__text-end">
+        © 2021 Rishele — интернет-магазин Ришелье. <br>
+        ИНН 504710961909, ОГРН 318500700006527 <br>
+        Указывая номер телефона на сайте, вы соглашаетесь с условиями публичной оферты и обработки персональных данных.
+        <br>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--footer end-->
+
+
+
+
+
+
+
+
+
   <script src="js/main.min.js"></script>
 </body>
+
 </html>
