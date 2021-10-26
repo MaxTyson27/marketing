@@ -93,6 +93,52 @@
   }
 }
 
+.about{
+  padding: 140px 0;
+  background: #F6F8FA;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  &__text{
+    max-width: 770px;
+    &:first-child{
+      margin-bottom: 20px;
+    }
+  }
+  &__title{
+    font-size: 48px;
+  }
+}
+
+.expertise{
+  padding: 140px 0;
+  &__title{
+    margin-bottom: 90px;
+  }
+  &__skills{
+    width: 370px;
+    border-top: 2px solid #1D1D1D;
+    &-line{
+      position: absolute;
+      z-index: 5;
+      right: 0;
+      top: 0;
+      &::before{
+        content: '';
+        position: absolute;
+        z-index: 2;
+        width:  100%;
+        background: #F0F0F0;
+        height: 2px;
+        top: -2px;
+        left: 0;
+      }
+    }
+  }
+}
+
 
 
 @import 'media';
