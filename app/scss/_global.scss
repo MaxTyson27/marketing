@@ -1,9 +1,27 @@
 
-body{
+a{
+  color: inherit;
+}
 
+body{
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #373A39;
+}
+
+
+*{
+  outline: transparent;
+}
+
+.wrapper{
+  overflow: hidden;
 }
 
 .container{
+  max-width: 1130px;
   padding: 0 15px;
   margin: 0 auto;
 }

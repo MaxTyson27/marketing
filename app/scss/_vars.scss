@@ -1,3 +1,25 @@
+$accent: #FCBB08;
 
 
+%rob-300{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
 
+@mixin mon($w){
+  font-family: 'Montserrat', sans-serif;
+  font-weight: $w;
+}
+
+
+%ral-700{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+
+@mixin bg($p,$s){
+  background-image: url($p);
+  background-size: $s;
+  background-repeat: no-repeat;
+}
