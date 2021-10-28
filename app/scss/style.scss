@@ -19,7 +19,7 @@
     @include bg('../images/header-bg.jpg', cover);
     background-position: center top -100px;
     &-inner{
-      height: calc(100vh - 94px);
+      min-height: calc(100vh - 94px);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -70,25 +70,8 @@
       padding-bottom: 9px;
       padding-right: 5px;
       padding-left: 5px;
-      position: relative;
-      transition: all .3s;
-      &::before{
-        content: '';
-        position: absolute;
-        height: 2px;
-        width: 1%;
-        background-color: #FCBB08;
-        bottom: 0;
-        left: 0;
-        opacity: 0;
-        transition: all .5s;
-      }
-      &:hover{
-        &::before{
-          width: 100%;
-          opacity: 1;
-        }
-      }
+      @extend %anim-btn;
+      
     }
   }
 }
@@ -114,31 +97,135 @@
 
 .expertise{
   padding: 140px 0;
+  &__content{
+    display: flex;
+    align-items: center;
+    padding-bottom: 110px;
+  }
   &__title{
     margin-bottom: 90px;
   }
   &__skills{
-    width: 370px;
-    border-top: 2px solid #1D1D1D;
-    &-line{
+    border-top: 2px solid #1D1d1d;
+    position: relative;
+    color: #1D1d1d;
+    letter-spacing: 1px;
+    font-size: 11px;
+    padding-top: 2px;
+    line-height: 20px;
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+    span{
+      display: block;
       position: absolute;
-      z-index: 5;
-      right: 0;
+      right: 7px;
       top: 0;
       &::before{
         content: '';
         position: absolute;
-        z-index: 2;
-        width:  100%;
-        background: #F0F0F0;
         height: 2px;
+        background-color: #f0f0f0;
         top: -2px;
-        left: 0;
+        right: -7px;
+        width: 100%;
       }
+    }
+  }
+  &__content-items{
+    width: 370px;
+  }
+  &__text{
+    margin-left: 30px;
+    transform: translateY(-10px);
+    p{
+      max-width: 770px;
+      &:first-child{
+        margin-bottom: 25px;
+      }
+    }
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    display: flex;
+    &-box{
+      margin-left: 35px;
+    }
+    &-title{
+      letter-spacing: 4.29px;
+      color: #333333;
+      line-height: 20px;
+      @extend %ral-700;
+      margin-bottom: 14px;
+    }
+    &-text{
+      color: #777777;
+      max-width: 285px;
+    }
+    img{
+      height: 50px;
     }
   }
 }
 
+
+.magic{
+  background-color: #F6F8FA;
+  padding-top: 100px;
+  padding-bottom: 190px;
+  @include bg('../images/magic-bg.jpg', contain);
+  background-position: bottom left;
+  margin-bottom: 140px;
+  &__inner{
+    max-width: 470px;
+    margin-left: auto;
+  }
+  &__title{
+    margin-bottom: 65px;
+  }
+  &__text{
+    margin-bottom: 25px;
+  }
+}
+
+.portfolio{
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    align-items: center;
+  }
+  &__btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    color: #333333;
+    font-size: 12px;
+    @include mon(700);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    & + .portfolio__btn{
+      margin-left: 20px;
+    }
+    @extend %anim-btn;
+  }
+  &__inner{
+    column-count: 4;
+    column-gap: 20px;
+  }
+  &__img{
+      img{
+        width: 100%;
+        margin-bottom: 20px;
+        display: block;
+      }
+    }
+}
 
 
 @import 'media';
