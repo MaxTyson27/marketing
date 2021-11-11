@@ -17,6 +17,12 @@ $accent: #FCBB08;
   font-weight: 700;
 }
 
+%italic{
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
 
 @mixin bg($p,$s){
   background-image: url($p);
@@ -44,4 +50,10 @@ $accent: #FCBB08;
       opacity: 1;
     }
   }
+}
+
+@mixin flex-center(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

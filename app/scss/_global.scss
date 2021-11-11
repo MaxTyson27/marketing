@@ -43,3 +43,49 @@ body{
     bottom: 0;
   }
 }
+
+.slick-arrow{
+  background-color:transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 58%;
+  transform: translateY(-50%);
+}
+
+.slick-prev{
+  left: 40px;
+}
+.slick-next{
+  right: 40px;
+  top: 55%;
+}
+
+.slick-dots{
+  display: flex;
+  align-items: center;
+  padding-left: 130px !important;
+  li{
+    &:not(:last-child){
+      margin-right: 13px;
+    }
+    button{
+      font-size: 0;
+      border: none;
+      background-color: #242121;
+      padding: 0;
+      width: 6px;
+      height: 6px;
+      opacity: 0.4;
+      border-radius: 50%;
+    }
+  }
+  .slick-active{
+    margin-top: -5px;
+    button{
+      width: 10px;
+      height: 10px;
+      opacity: 1;
+    }
+  }
+}
